@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ArtviseComponent } from './artvise/artvise.component';
 import { AuthCallbackComponent } from './auth-callback/auth-callback.component';
 import { AuthService } from './services/auth.service';
-import { Http } from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,9 @@ import { Http } from '@angular/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    Http
+    HttpModule
   ],
   providers: [
-    Http,
     AuthService
   ],
   bootstrap: [AppComponent]
